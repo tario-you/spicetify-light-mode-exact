@@ -293,8 +293,13 @@ body :is(
  [role="button"] svg path {
   color: var(--lm-text) !important;
   fill: currentColor !important;
-  stroke: currentColor !important;
 }
+
+ svg path:not([fill="none"]),
+ button svg path:not([fill="none"]),
+ [role="button"] svg path:not([fill="none"]) {
+  stroke: none !important;
+ }
 
  button[disabled],
  button[disabled] svg,
@@ -304,7 +309,6 @@ body :is(
  [aria-disabled="true"] svg path {
   color: var(--lm-disabled) !important;
   fill: currentColor !important;
-  stroke: currentColor !important;
 }
 
  .main-actionBar-ActionBar button,
@@ -327,7 +331,6 @@ body :is(
  button[data-testid="more-button"] {
   color: var(--lm-text) !important;
   fill: currentColor !important;
-  stroke: currentColor !important;
 }
 
  .main-trackList-playingIcon,
@@ -342,7 +345,6 @@ body :is(
  .main-shuffleButton-button[aria-checked="true"] * {
   color: var(--lm-green) !important;
   fill: currentColor !important;
-  stroke: currentColor !important;
 }
 
  .main-playButton-PlayButton,
@@ -396,7 +398,6 @@ body :is(
  button[data-testid="control-button-playpause"] svg * {
   color: var(--lm-panel) !important;
   fill: currentColor !important;
-  stroke: currentColor !important;
 }
 
  .main-trackList-trackListHeader,
