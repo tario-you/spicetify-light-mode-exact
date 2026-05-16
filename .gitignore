@@ -1,0 +1,14 @@
+.DS_Store
+Themes/.DS_Store
+*.log
+*.err
+
+# local spicetify state
+config-xpui.ini
+CustomApps/
+Extensions/
+Themes/marketplace/
+
+# local/generated caches
+Backup/
+Extracted/

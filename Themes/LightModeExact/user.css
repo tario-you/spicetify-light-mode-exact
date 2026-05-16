@@ -1,0 +1,441 @@
+:root {
+  --lm-bg: #f7f8fa;
+  --lm-panel: #ffffff;
+  --lm-hover: #e9edf2;
+  --lm-press: #dde3ea;
+  --lm-selected: #e6f4ea;
+  --lm-panel-hover: #f4f6f8;
+  --lm-text: #171717;
+  --lm-subtext: #5f6368;
+  --lm-green: #1db954;
+  --lm-green-text: #14783a;
+  --lm-red: #d93025;
+  --lm-yellow: #b26a00;
+  --lm-yellow-text: #8a5200;
+  --lm-muted-icon: #8a9099;
+  --lm-border: #d7dce2;
+  --lm-input-border: #cfd5dc;
+  --lm-disabled: #a2a9b3;
+  --lm-placeholder: #7a818b;
+  --lm-scrollbar: #c0c6cf;
+  --lm-scrollbar-hover: #9aa2ad;
+  --lm-topbar: rgba(247, 248, 250, 0.92);
+  --lm-tinted-base: rgba(0, 0, 0, 0.06);
+  --lm-tinted-highlight: rgba(0, 0, 0, 0.09);
+  --lm-tinted-press: rgba(0, 0, 0, 0.12);
+  --lm-cover-shadow: rgba(23, 23, 23, 0.12);
+  color-scheme: light;
+}
+
+:root,
+body,
+ .encore-light-theme,
+ .encore-dark-theme,
+ .encore-base-set,
+ .encore-bright-accent-set,
+ .encore-inverted-light-set,
+ .encore-inverted-dark-set {
+  --background-base: var(--lm-bg) !important;
+  --background-highlight: var(--lm-hover) !important;
+  --background-press: var(--lm-press) !important;
+  --background-elevated-base: var(--lm-panel) !important;
+  --background-elevated-highlight: var(--lm-panel-hover) !important;
+  --background-elevated-press: var(--lm-hover) !important;
+  --background-tinted-base: var(--lm-tinted-base) !important;
+  --background-tinted-highlight: var(--lm-tinted-highlight) !important;
+  --background-tinted-press: var(--lm-tinted-press) !important;
+  --text-base: var(--lm-text) !important;
+  --text-subdued: var(--lm-subtext) !important;
+  --text-bright-accent: var(--lm-green-text) !important;
+  --text-negative: var(--lm-red) !important;
+  --text-warning: var(--lm-yellow-text) !important;
+  --text-positive: var(--lm-green-text) !important;
+  --essential-base: var(--lm-text) !important;
+  --essential-subdued: var(--lm-muted-icon) !important;
+  --essential-bright-accent: var(--lm-green) !important;
+  --essential-negative: var(--lm-red) !important;
+  --essential-warning: var(--lm-yellow) !important;
+  --decorative-base: var(--lm-text) !important;
+  --decorative-subdued: var(--lm-border) !important;
+}
+
+body,
+ #main,
+ .Root,
+ .Root__top-container,
+ .Root__globalNav,
+ .Root__left-sidebar,
+ .Root__right-sidebar,
+ .Root__right-sidebar aside,
+ .Root__main-view,
+ .main-view-container,
+ .main-view-container__scroll-node,
+ .main-view-container__scroll-node-child,
+ .main-yourLibraryX-entryPoints,
+ .main-yourLibraryX-libraryRootlist,
+ .Root__nav-bar,
+ .Root__now-playing-bar,
+ .main-nowPlayingBar-container,
+ .main-nowPlayingView-container,
+ .main-nowPlayingView-nowPlayingWidget,
+ .main-nowPlayingView-sidebar {
+  background: var(--lm-bg) !important;
+  background-color: var(--lm-bg) !important;
+  background-image: none !important;
+  color: var(--lm-text) !important;
+}
+
+ .Root__nav-bar,
+ .Root__left-sidebar,
+ .Root__right-sidebar,
+ .Root__right-sidebar aside,
+ .main-yourLibraryX-libraryContainer,
+ .main-nowPlayingBar-container,
+ .Root__now-playing-bar,
+ .main-nowPlayingView-container,
+ .main-nowPlayingView-sidebar {
+  background: var(--lm-panel) !important;
+  background-color: var(--lm-panel) !important;
+  color: var(--lm-text) !important;
+}
+
+ .main-topBar-background,
+ .main-topBar-overlay,
+ .main-globalNav-navRoot,
+ .main-globalNav-navBar,
+ .main-globalNav-historyButtons,
+ .main-globalNav-searchContainer,
+ .main-globalNav-searchInputContainer,
+ .main-globalNav-searchInput,
+ .main-topBar-container,
+ .main-topBar-topbarContent {
+  background: var(--lm-topbar) !important;
+  background-color: var(--lm-topbar) !important;
+  background-image: none !important;
+  color: var(--lm-text) !important;
+}
+
+ .main-home-homeHeader,
+ .main-home-content,
+ .main-home-filterChipsSection,
+ .main-actionBarBackground-background,
+ .main-entityHeader-background,
+ .main-entityHeader-backgroundColor,
+ .main-entityHeader-overlay,
+ .main-entityHeader-gradient,
+ .main-entityHeader-shadow,
+ .main-entityHeader-container,
+ .main-nowPlayingView-coverArtContainer,
+ .main-nowPlayingView-contextItemInfo,
+ .main-nowPlayingView-section,
+ .main-nowPlayingView-aboutArtistV2Section,
+ .main-nowPlayingView-creditsSection,
+ .main-nowPlayingView-background,
+ .main-nowPlayingView-gradient,
+ .main-nowPlayingView-overlay,
+ .main-nowPlayingView-content,
+ .main-underMainView-gradient,
+ .main-rootlist-wrapper,
+ .main-buddyFeed-feed,
+ .main-buddyFeed-container {
+  background: var(--lm-bg) !important;
+  background-color: var(--lm-bg) !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+ .main-home-homeHeader::before,
+ .main-home-homeHeader::after,
+ .main-home-content::before,
+ .main-home-content::after,
+ .main-entityHeader-container::before,
+ .main-entityHeader-container::after,
+ .main-entityHeader-background::before,
+ .main-entityHeader-background::after,
+ .main-actionBarBackground-background::before,
+ .main-actionBarBackground-background::after,
+ .main-nowPlayingView-coverArtContainer::before,
+ .main-nowPlayingView-coverArtContainer::after,
+ .main-nowPlayingView-contextItemInfo::before,
+ .main-nowPlayingView-contextItemInfo::after,
+ .main-nowPlayingView-section::before,
+ .main-nowPlayingView-section::after,
+ .main-underMainView-gradient::before,
+ .main-underMainView-gradient::after {
+  background: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+ [style*="linear-gradient"],
+ [style*="radial-gradient"],
+ [class*="Gradient"],
+ [class*="gradient"],
+ [class*="overlay"],
+ [class*="Overlay"] {
+  background-image: none !important;
+}
+
+ .main-view-container [style*="background-color: rgb("],
+ .main-view-container [style*="background: rgb("],
+ .main-view-container [style*="background-color:rgba("],
+ .main-view-container [style*="background:rgba("] {
+  background: var(--lm-bg) !important;
+  background-color: var(--lm-bg) !important;
+  background-image: none !important;
+}
+
+ [style*="mask-image"],
+ [style*="-webkit-mask-image"],
+ [class*="Fade"],
+ [class*="fade"] {
+  -webkit-mask-image: none !important;
+  mask-image: none !important;
+}
+
+ .main-shelf-shelfGrid::before,
+ .main-shelf-shelfGrid::after,
+ .main-gridContainer-gridContainer::before,
+ .main-gridContainer-gridContainer::after,
+ .main-carousel-carousel::before,
+ .main-carousel-carousel::after,
+ .main-horizontalList-list::before,
+ .main-horizontalList-list::after {
+  display: none !important;
+  background: transparent !important;
+  background-image: none !important;
+}
+
+ .main-card-card,
+ .main-trackList-trackList,
+ .main-contextMenu-menu,
+ .main-userWidget-box,
+ .main-shelf-shelf,
+ .x-entityImage-imageContainer,
+ .main-nowPlayingView-section,
+ .main-buddyFeed-container {
+  background-color: var(--lm-panel) !important;
+  color: var(--lm-text) !important;
+}
+
+ .main-actionBar-ActionBar,
+ .main-actionBar-ActionBarRow,
+ .main-actionBar-ActionBarContent,
+ .main-entityHeader-details,
+ .main-trackList-trackListHeader,
+ .main-trackList-trackListHeaderStuck.main-trackList-trackListHeader,
+ .main-trackList-trackListRow,
+ .main-trackList-trackListRowGrid {
+  background: var(--lm-bg) !important;
+  background-color: var(--lm-bg) !important;
+  background-image: none !important;
+  color: var(--lm-text) !important;
+}
+
+ .main-card-card:hover,
+ .main-trackList-trackListRow:hover,
+ .main-rootlist-rootlistItem:hover,
+ .main-yourLibraryX-listItem:hover,
+ .main-contextMenu-menuItemButton:hover {
+  background-color: var(--lm-hover) !important;
+}
+
+ .main-trackList-trackListRow.main-trackList-selected,
+ .main-rootlist-rootlistItem.main-rootlist-rootlistItemActive,
+ .main-yourLibraryX-navLink[aria-current="page"],
+ .main-yourLibraryX-listItem[aria-selected="true"] {
+  background-color: var(--lm-selected) !important;
+}
+
+body :is(h1, h2, h3, h4, h5, p, span, a, div, button, [role="button"], [data-encore-id="type"], [class*="TypeElement"]),
+ .main-entityHeader-container [style*="color: rgb(255"],
+ .main-entityHeader-container [style*="color:rgb(255"],
+ .main-entityHeader-container [style*="color: #fff"],
+ .main-entityHeader-container [style*="color:#fff"],
+ .main-nowPlayingView-section [style*="color: rgb(255"],
+ .main-nowPlayingView-section [style*="color:rgb(255"],
+ .main-nowPlayingView-section [style*="color: #fff"],
+ .main-nowPlayingView-section [style*="color:#fff"] {
+  color: var(--lm-text) !important;
+  text-shadow: none !important;
+}
+
+body :is(
+  [class*="subdued" i],
+  [class*="subtitle" i],
+  [class*="metadata" i],
+  [class*="description" i],
+  [class*="secondary" i],
+  [data-testid*="subtitle" i],
+  [data-testid*="metadata" i],
+  [data-testid*="description" i],
+  .main-type-mesto,
+  .main-type-alto,
+  .main-trackList-rowSubTitle,
+  .main-trackList-rowSectionVariable,
+  .main-yourLibraryX-listItemSubTitle,
+  .main-entityHeader-subtitle,
+  .main-entityHeader-metaDataText,
+  .main-nowPlayingBar-secondaryText
+) {
+  color: var(--lm-subtext) !important;
+  opacity: 1 !important;
+  text-shadow: none !important;
+}
+
+ svg,
+ svg path,
+ [class*="Icon"],
+ [class*="icon"],
+ button svg,
+ button svg path,
+ [role="button"] svg,
+ [role="button"] svg path {
+  color: var(--lm-text) !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+
+ button[disabled],
+ button[disabled] svg,
+ button[disabled] svg path,
+ [aria-disabled="true"],
+ [aria-disabled="true"] svg,
+ [aria-disabled="true"] svg path {
+  color: var(--lm-disabled) !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+
+ .main-actionBar-ActionBar button,
+ .main-actionBar-ActionBar [role="button"],
+ .main-actionBar-ActionBar svg,
+ .main-actionBar-ActionBar svg path,
+ button[aria-label="Save to Your Library"],
+ button[aria-label="Remove from Your Library"],
+ button[aria-label="Download"],
+ button[aria-label="More options"],
+ button[aria-label="Enable shuffle"],
+ button[aria-label="Disable shuffle"],
+ button[aria-label="Add to playlist"],
+ button[aria-label="List"],
+ button[aria-label="Compact"],
+ button[aria-label="User view"],
+ button[aria-label="Now playing view"],
+ button[data-testid="add-button"],
+ button[data-testid="download-button"],
+ button[data-testid="more-button"] {
+  color: var(--lm-text) !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+
+ .main-trackList-playingIcon,
+ .main-trackList-playingIcon *,
+ .main-trackList-rowMarker,
+ .main-trackList-rowMarker *,
+ .main-addButton-active,
+ .main-addButton-active *,
+ .main-repeatButton-button[aria-checked="true"],
+ .main-repeatButton-button[aria-checked="true"] *,
+ .main-shuffleButton-button[aria-checked="true"],
+ .main-shuffleButton-button[aria-checked="true"] * {
+  color: var(--lm-green) !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+
+ .main-playButton-PlayButton,
+ .main-playPauseButton-button,
+ button[data-testid="play-button"],
+ button[data-testid="control-button-playpause"] {
+  color: var(--lm-panel) !important;
+}
+
+ .main-playButton-PlayButton,
+ button[data-testid="play-button"] {
+  background: transparent !important;
+  background-color: transparent !important;
+  border-radius: 9999px !important;
+  overflow: hidden !important;
+}
+
+ .main-playButton-PlayButton > span,
+ .main-playButton-PlayButton .ButtonInner-sc-14ud5tc-0,
+ button[data-testid="play-button"] > span,
+ button[data-testid="play-button"] .ButtonInner-sc-14ud5tc-0,
+ .main-playPauseButton-button,
+ button[data-testid="control-button-playpause"] {
+  background: var(--lm-green) !important;
+  background-color: var(--lm-green) !important;
+  border-radius: 9999px !important;
+}
+
+ .main-card-card .ButtonInner-sc-14ud5tc-0,
+ .main-home-homeHeader .ButtonInner-sc-14ud5tc-0,
+ .main-home-content .ButtonInner-sc-14ud5tc-0 {
+  border-radius: 9999px !important;
+}
+
+ .main-card-card button,
+ .main-card-card [role="button"],
+ .main-home-homeHeader button,
+ .main-home-homeHeader [role="button"],
+ .main-home-content button,
+ .main-home-content [role="button"] {
+  border-radius: 9999px !important;
+}
+
+ .main-playButton-PlayButton svg,
+ .main-playButton-PlayButton svg *,
+ .main-playPauseButton-button svg,
+ .main-playPauseButton-button svg *,
+ button[data-testid="play-button"] svg,
+ button[data-testid="play-button"] svg *,
+ button[data-testid="control-button-playpause"] svg,
+ button[data-testid="control-button-playpause"] svg * {
+  color: var(--lm-panel) !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+
+ .main-trackList-trackListHeader,
+ .main-trackList-trackListRow,
+ .main-yourLibraryX-listItem,
+ .main-rootlist-rootlistItem,
+ .main-nowPlayingBar-container {
+  border-color: var(--lm-border) !important;
+}
+
+ .main-coverSlotCollapsed-navAltContainer,
+ .main-coverSlotExpanded-container,
+ .main-nowPlayingWidget-coverArt,
+ .main-image-image {
+  box-shadow: 0 1px 4px var(--lm-cover-shadow) !important;
+}
+
+ input,
+ textarea,
+ .x-filterBox-filterInput,
+ .main-searchInput-searchInput,
+ .main-topBar-searchBar {
+  background-color: var(--lm-panel) !important;
+  color: var(--lm-text) !important;
+  border-color: var(--lm-input-border) !important;
+}
+
+ ::placeholder {
+  color: var(--lm-placeholder) !important;
+}
+
+ ::-webkit-scrollbar-thumb {
+  background-color: var(--lm-scrollbar) !important;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+  background-color: var(--lm-scrollbar-hover) !important;
+}
+
+ ::-webkit-scrollbar-track {
+  background-color: var(--lm-bg) !important;
+}
